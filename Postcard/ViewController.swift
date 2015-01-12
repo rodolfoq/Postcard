@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(sender: UIButton) {
         nameLabel.hidden = false
         nameLabel.text = enterNameTextField.text
+        enterNameTextField.text = ""
+        enterNameTextField.resignFirstResponder()
+        nameLabel.textColor = UIColor .redColor()
     }
 
 }
